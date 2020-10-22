@@ -1,5 +1,5 @@
 \\\
-Mostrará algumas informações do seu bot 
+Mostra-rá algumas informações do seu bot 
 \\\ 
 exports.run = (client, msg, args) => {
 String.prototype.toHHMMSS = function () {
