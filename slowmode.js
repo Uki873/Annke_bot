@@ -1,5 +1,5 @@
 \\\
-Isso server para deixar seu chat em modo lento.
+Isso serve para deixar seu chat em modo lento.
 \\\
 
 const Discord = require('discord.js')
