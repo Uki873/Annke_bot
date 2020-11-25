@@ -39,8 +39,9 @@ module.exports = {
                 var sembed2 = new MessageEmbed()
                 .setColor("GREEN")
                 .setAuthor(message.guild.name, message.guild.iconURL())
-                .setDescription(`**${banMember.user.username}** has been banned`)
-            message.channel.send(sembed2)
+                .setDescription(`**${banMember.user.username}** foi banido`)
+           
+                message.channel.send(sembed2)
             }
             let channel = db.fetch(`modlog_${message.guild.id}`)
             if (channel == null) return;
