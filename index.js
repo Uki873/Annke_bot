@@ -1,3 +1,4 @@
+
 const express = require('express');
 const app = express();
 app.get("/", (request, response) => {
@@ -17,6 +18,8 @@ client.on('message', message => {
      if (!message.content.toLowerCase().startsWith(config.prefix.toLowerCase())) return;
      if (message.content.startsWith(`<@!${client.user.id}>`) || message.content.startsWith(`<@${client.user.id}>`)) return;
 
+
+
     const args = message.content
         .trim().slice(config.prefix.length)
         .split(/ +/g);
@@ -32,19 +35,21 @@ client.on('message', message => {
 
 client.on("ready", () => {
   let activities = [
-      `Utilize ${config.prefix}help para obter ajuda`,
-      `${client.guilds.cache.size} servidores!`,
-      `${client.channels.cache.size} canais!`,
-      `${client.users.cache.size} usuários!`
+      
+      `Utilize ${config.prefix}ajuda para ver meus comandos ^^`,
+      `Café para todo o mundo ☕️ !`,
+      `Caféteria coffe is good`,
+      `Na noite passada 💞 `
+      
     ],
     i = 0;
   setInterval( () => client.user.setActivity(`${activities[i++ % activities.length]}`, {
-        type: "WATCHING"
-      }), 1000 * 60); 
+     type: "STREAMING", url: "https://www.twitch.tv/neuker3"
+      }), 10000); 
   client.user
       .setStatus("dnd")
       .catch(console.error);
 console.log("Estou Online!")
 });
 client.login(process.env.TOKEN); //Ligando o Bot caso ele consiga acessar o token
- 
+
