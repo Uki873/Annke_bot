@@ -37,7 +37,7 @@ exports.run = (client, message, args) =>{
     let serverembed = new Discord.MessageEmbed()
         .setColor("#60dd85")
         
-        .setAuthor(`Barman de Café -1.0.9A`, client.user.displayAvatarURL)
+        .setAuthor(`Annke_bot -1.0.9A`, client.user.displayAvatarURL)
         .addField(`:mega: | Versão:`,`1.9`, true)
         .addField(`📒 | Livraria:`,`Discord.js` , true)
         .addField(`:cyclone: | Criadores:`,`sonunzin_#2046`, true)
