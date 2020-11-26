@@ -37,10 +37,10 @@ exports.run = (client, message, args) =>{
     let serverembed = new Discord.MessageEmbed()
         .setColor("#60dd85")
         
-        .setAuthor(`Annke_bot -1.0.9A`, client.user.displayAvatarURL)
+        .setAuthor(`Annke™-2.0.0A`, client.user.displayAvatarURL)
         .addField(`:mega: | Versão:`,`1.9`, true)
         .addField(`📒 | Livraria:`,`Discord.js` , true)
-        .addField(`:cyclone: | Criadores:`,`sonunzin_#2046`, true)
+        .addField(`:cyclone: | Criador:`,`sonunzin_#2046`, true)
         .addField(`:ringed_planet: | Servers:`, `${servers}`, true)
         .addField(`👥 | Usuarios:`, `${users}`, true)
         .setImage("https://media.discordapp.net/attachments/766677248672530463/776069284887134228/unknown.png")
