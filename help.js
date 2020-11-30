@@ -11,7 +11,7 @@ const embed = new Discord.MessageEmbed()
    
     .setThumbnail(`https://cdn.discordapp.com/icons/${message.guild.id}/${message.guild.icon}.png?size=2048`)
     .addField("**:hammer:➤  Comandos Moderação**", "**``/warn`` ``/listban`` ``/caifora`` ``/ban`` ``/kick`` ``/mute`` ``/unmute``**")
-    .addField("**:dizzy:➤  Comandos Úteis**", "**``/anuncio`` ``/enquete`` ``/sorteio`` ``/lock`` ``/unlock`` ``/slowmode`` ``/criar_canal`` ``/clear`` ``info`` ** ``ping`` **``")
+    .addField("**:dizzy:➤  Comandos Úteis**", "**``/anuncio`` ``/enquete`` ``/sorteio`` ``/lock`` ``/unlock`` ``/slowmode`` ``/criar_canal`` ``/clear`` ``info`` ``ping`` **")
 
     
     .setTimestamp()
