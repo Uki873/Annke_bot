@@ -8,10 +8,10 @@ exports.run = (client, message, args) => {
 
   .setTitle(`INFORMAÇÃO`)
   .setDescription(`Limpe o chat do seu servidor`)
-  .addField(`:hammer: **Uso**`, `\`${c.prefix}clear <número de 2 à 100>\``, true)
-  .addField(`:book: **Exemplo**`, `\`${c.prefix}clear 100\``, true)
-  .addField(`:bookmark: **Permissão**`, `\`MANAGE_MESSAGES\``)
-  .addField(`:twisted_rightwards_arrows: **Alternativas**`, `\` ${c.prefix}clear\``)
+  .addField(`:hammer: | **Uso**`, `\`${c.prefix}clear <número de 2 à 100>\``, true)
+  .addField(`:book: | **Exemplo**`, `\`${c.prefix}clear 100\``, true)
+  .addField(`:bookmark: | **Permissão**`, `\`MANAGE_MESSAGES\``)
+  .addField(`:twisted_rightwards_arrows: | **Alternativas**`, `\` ${c.prefix}clear\``)
   .setColor('#a67dff')  
 
     if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send(`:x: **|** Você precisa da permissão \`MANAGE_MESSAGES\`.`);
