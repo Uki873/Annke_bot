@@ -1,5 +1,4 @@
-//Obs: Sim vc pode mudar o nome do cargo 🔇 | barman Muted para algum que vc queira, mas é necessario que crie o cargo no servidor, caso não tenha o bot não vai conseguir mutar
-
+//Uma breve  obs:  para que o mute funcione seu servidor precisa ter tag com o nome "Muted"
 
 
 
@@ -39,9 +38,9 @@ module.exports = {
       return message.channel.send("Por favor, dê o motivo para silenciar o membro")
     }
     
-  //TIME TO LET MUTED ROLE
+
     
-    let muterole = message.guild.roles.cache.find(x => x.name === "🔇 | barman Muted")
+    let muterole = message.guild.roles.cache.find(x => x.name === "Muted")
     
     
       if(!muterole) {
@@ -63,7 +62,6 @@ await message.channel.send(`Você silenciou **${message.mentions.users.first().u
     user.send(`Você está mudo em**${message.guild.name}** por \`${reason}\``)
     
     
-//WE ARE DONE HERE 
     
   }
 };
