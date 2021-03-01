@@ -7,11 +7,11 @@ app.get("/", (request, response) => {
   console.log(`Ping recebido às ${ping.getUTCHours()}:${ping.getUTCMinutes()}:${ping.getUTCSeconds()}`);
   response.sendStatus(200);
 });
-app.listen(process.env.PORT); // Recebe solicitações que o deixa online
+app.listen(process.env.PORT); 
 
-const Discord = require("discord.js"); //Conexão com a livraria Discord.js
-const client = new Discord.Client(); //Criação de um novo Client
-const config = require("./config.json"); //Pegando o prefixo do bot para respostas de comandos
+const Discord = require("discord.js"); 
+const client = new Discord.Client(); 
+const config = require("./config.json"); 
 client.on('message', message => {
      if (message.author.bot) return;
      if (message.channel.type == 'dm') return;
@@ -51,5 +51,5 @@ client.on("ready", () => {
       .catch(console.error);
 console.log("Estou Online!")
 });
-client.login(process.env.TOKEN); //Ligando o Bot caso ele consiga acessar o token
+client.login(process.env.TOKEN); 
 
