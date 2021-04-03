@@ -41,7 +41,7 @@ client.on('message', async message => {
   if (member)
     if (member.id == `${client.user.id}`)
       message.channel.send(
-        `> Olá **${message.author.username}**, Esta precisando de ajuda? \n  ${emoji} Utilize: **B.ajuda**`
+        `> Olá **${message.author.username}**, Esta precisando de ajuda? \n  ${emoji} Utilize: ${prefix}.ajuda`
       );
 });
 
