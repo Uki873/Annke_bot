@@ -32,6 +32,28 @@ client.on('message', message => {
     console.error('Erro:' + err);
   }
 });
+//Responde a menções 
+client.on('message', async message => {
+  if (message.author.bot) return;
+  if (message.channel.type == 'dm') return;
+  let member = message.mentions.members.first();
+  let emoji = await member.guild.emojis.cache.find(emoji => emoji.name === "seta_red");
+  if (member)
+    if (member.id == `${client.user.id}`)
+      message.channel.send(
+        `> Olá **${message.author.username}**, Esta precisando de ajuda? \n  ${emoji} Utilize: **B.ajuda**`
+      );
+});
+
+
+//Aqui sempre que ele liga mostra no conole os servidores!
+client.on('ready', () => {
+  client.guilds.cache.map(x => {
+    console.log(`Nome: ${x.name}`);
+  });
+});
+
+//Mudança de status
 
 client.on("ready", () => {
   let activities = [
