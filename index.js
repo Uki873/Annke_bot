@@ -46,7 +46,7 @@ client.on('message', async message => {
 });
 
 
-//Aqui sempre que ele liga mostra no conole os servidores!
+//Aqui sempre que ele liga mostra no console os servidores onde ele está!
 client.on('ready', () => {
   client.guilds.cache.map(x => {
     console.log(`Nome: ${x.name}`);
