@@ -73,5 +73,5 @@ client.on("ready", () => {
       .catch(console.error);
 console.log("Estou Online!")
 });
-client.login(process.env.TOKEN); 
+client.login('token do seu bot'); 
 
